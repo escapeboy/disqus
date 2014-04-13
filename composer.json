@@ -1,10 +1,16 @@
 {
     "name": "escapeboy/disqus",
+    "type": "library",
     "description": "Disqus API simple usage in Laravel 4",
+    "keywords": ["disqus","laravel", "comments"],
+    "homepage": "https://github.com/escapeboy/disqus",
+    "license": "MIT",
     "authors": [
         {
             "name": "Nikola Katsarov",
-            "email": "katsarov@gmail.com"
+            "email": "katsarov@gmail.com",
+            "homepage": "http://katsarov.biz",
+            "role": "Developer"
         }
     ],
     "require": {

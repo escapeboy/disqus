@@ -52,6 +52,11 @@ More info here:
 $thread = Disqus::get('threads', 'details', array('thread:link' => 'http://thread_url'));
 ```
 
+Sending data to Disqus
+```php
+Disqus::post('posts', 'create', array('message' => 'Yo! Nice thread!', 'thread' => 12));
+```
+
 Some shorthand functions
 ======
 ```php

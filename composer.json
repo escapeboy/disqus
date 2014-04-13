@@ -1,6 +1,6 @@
 {
     "name": "escapeboy/disqus",
-    "description": "",
+    "description": "Disqus API simple usage in Laravel 4",
     "authors": [
         {
             "name": "Nikola Katsarov",
@@ -19,5 +19,6 @@
             "Escapeboy\\Disqus\\": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

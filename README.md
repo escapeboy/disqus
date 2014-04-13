@@ -1,4 +1,4 @@
-Laravel 4 Disqus Package
+Laravel 4 Disqus Package v0.1
 ======
 
 Simple package to work with Disqus

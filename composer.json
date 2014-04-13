@@ -1,6 +1,7 @@
 {
     "name": "escapeboy/disqus",
     "type": "library",
+    "version": "0.1",
     "description": "Disqus API simple usage in Laravel 4",
     "keywords": ["disqus","laravel", "comments"],
     "homepage": "https://github.com/escapeboy/disqus",

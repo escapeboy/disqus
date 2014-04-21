@@ -46,15 +46,12 @@ class Disqus {
 	**/
 	public function post($section, $method, $params=array()){
 
-		foreach ($params as $key => $value) {
-			$vars.=$key.'='.$value.'&';
-		}
 		$endpoint = 'http://disqus.com/api/'.\Config::get('disqus::api_version').'/'.$section.'/'.$method.'.json?api_key='.urlencode(\Config::get('disqus::api_key'));
 
 		$session = curl_init($endpoint);
 		curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($session, CURLOPT_POST, count($params));
-		curl_setopt($session, CURLOPT_POSTFIELDS, $vars);
+		curl_setopt($session, CURLOPT_POSTFIELDS, http_build_query($params));
 		
 		$result = curl_exec($session);
 		curl_close($session);
